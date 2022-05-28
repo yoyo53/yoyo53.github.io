@@ -1,0 +1,39 @@
+{
+    "tasks": [
+        {
+            "task": "Appointment dentist",
+            "date": "2022-04-01",
+            "category": "Personnal tasks"
+        },
+
+        {
+            "task": "Prepare new year celebrations",
+            "date": "2023-12-31",
+            "category": "Personnal tasks"
+        },
+
+        {
+            "task": "Solve year 2000 problem",
+            "date": "2000-01-01",
+            "category": "Professionnal tasks"
+        },
+
+        {
+            "task": "Web programming project",
+            "date": "2022-05-29",
+            "category": "Professionnal tasks"
+        },
+
+        {
+            "task": "Buy candies for halloween",
+            "date": "2022-10-31",
+            "category": "Shared tasks"
+        },
+
+        {
+            "task": "Big party !!!",
+            "date": "2022-03-20",
+            "category": "Shared tasks"
+        }
+    ]
+}
