@@ -1,0 +1,18 @@
+#content {
+    flex: none;
+    width: fit-content;
+}
+
+#create_account_form {
+    text-align: center;
+    line-height: 2em;
+}
+
+#create_account_form table {
+    text-align: left;
+}
+
+#create_account_form button {
+    margin: 0 1em;
+    line-height: 1.5em;
+}

@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: calc(1vh + 1vw);
+}
+
+header, footer {
+    background-color:cornflowerblue;
+}
+
+section {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: none;
+    padding: 0.2em 0.5em;
+    box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.5);
+    border-radius: 0.5em;
+    font: inherit;
+    cursor: pointer;
+}
+
+input, select, textarea {
+    font: inherit;
+    line-height: 1em;
+}
+
+h2 {
+    font-size: 2em;
+    white-space: nowrap;
+}
+
+h3 {
+    font-size: 1.5em;
+    white-space: nowrap;
+}
+
+#title_line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title {
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1.4em;
+    padding-left: 1.5em;
+    margin: 0.5em auto;
+}
+
+#login {
+    position: absolute;
+    right: 1em;
+    height: fit-content;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+    padding: 0.5em;
+    font-size: 1.3em;
+    border-radius: 0.7em;
+    text-decoration: none;
+    color: black;
+}
+
+#disconnect {
+    display: flex;
+    position: absolute;
+    right: 1em;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+    padding: 0.5em;
+    font-size: 1.3em;
+    border-radius: 0.7em;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+#disconnect p {
+    margin: 0;
+    margin-right: 0.5em;
+}
+
+
+#nav_bar {
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+    padding: 0.5em;
+    margin-bottom: 1em;
+    max-height: 2em;
+    background-color: white;
+}
+
+
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+footer ul li {
+    padding-left: 1.5em;
+	background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 1em;
+}
+
+footer ul li:first-child {
+    background-image: url("../images/contact_icon.png");
+}
+
+footer ul li:nth-child(2) {
+    background-image: url("../images/find_us_icon.png");
+}
+
+footer ul li:last-child {
+    background-image: url("../images/info_icon.png");
+}

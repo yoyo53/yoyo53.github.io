@@ -1,0 +1,17 @@
+section {
+    background-color: whitesmoke;
+}
+
+#content {
+    flex: auto;
+    display: flex;
+    width: calc(100% - 6em);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2em;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}

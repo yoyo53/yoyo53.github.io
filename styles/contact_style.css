@@ -1,0 +1,14 @@
+#content {
+    flex: none;
+    width: fit-content;
+}
+
+#contact {
+    text-align: center;
+    line-height: 2em;
+}
+
+#contact button {
+    margin: 0 1em;
+    line-height: 1.5em;
+}

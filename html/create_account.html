@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Toboloc - Create Account</title>
+        <link rel="icon" type="image/x-icon" href="../images/logo.png">
+        <meta charset="utf-8">
+        <link rel= "stylesheet" href="../styles/main_style.css">
+        <link rel= "stylesheet" href="../styles/navigation_bar_style.css">
+        <link rel= "stylesheet" href="../styles/content_style.css">
+        <link rel= "stylesheet" href="../styles/create_account_style.css">
+        <script src="../scripts/create_account_script.js"></script>
+        <script src="../scripts/main_script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="title_line">
+                <h1 id="title" >Toboloc</h1>
+            </div>
+            <div id="nav_bar">
+                <ul id="menu">
+                    <li>
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <p>Products</p>
+                        <ul>
+                            <li>
+                                <a href="slides.html">Slides</a>
+                            </li>
+                            <li>
+                                <a href="water_slides.html">Water slides</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="buy.html">Buy</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section>
+            <div id="content">
+                <h2>Create your Account</h2>
+                <form id="create_account_form" onsubmit="create_account(); return false">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="name">Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="mail">E-mail address:</label>
+                            </td>
+                            <td>
+                                <input type="email" name="mail" id="mail" placeholder="email@email.com" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="password">Password:</label>
+                            </td>
+                            <td>
+                                <input type="password" name="password" id="password" placeholder="********" pattern=".{8,}" title="Eight or more characters" onkeyup="check_password()" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="confirm_password">Confirm Password:</label>
+                            </td>
+                            <td>
+                                <input type="password" name="confirm_password" id="confirm_password" placeholder="********" onkeyup="check_password()" required>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="checkbox" name="stay_connected" id="stay_connected">
+                    <label for="stay_connected">Stay Connected</label>
+                    <br>
+                    <button type="submit">Create Account</button>
+                    <button type="button" onclick="history.back()">Cancel</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <ul>
+                <li>
+                    <a href="contact.html">Contact us</a>
+                </li>
+                <li>
+                    <a href="https://goo.gl/maps/vMVJikAC5TB77T2r6" target="_blank">Find us</a>
+                </li>
+                <li>
+                    <a href="about.html">About us</a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+#page_title {
+    text-decoration: underline;
+    font-weight: normal;
+    font-size: 3em;
+}
+
+.slides {
+    display: flex;
+    align-items: center;
+    margin: 1em;
+}
+
+.slides:nth-child(2), .slides:nth-child(4) {
+    flex-direction: row-reverse;
+}
+
+.slides h3{
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
+}
+
+.slides p {
+    text-align: justify;
+    margin: 1em;
+}
+
+.slides img {
+    max-width: 20vw;
+    height: auto;
+}

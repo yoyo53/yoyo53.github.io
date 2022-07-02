@@ -1,0 +1,64 @@
+.text {
+    margin: 1em 3em;
+    margin-bottom: 0.5em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.sections {
+    margin: 0;
+    margin-left: 2em;
+    margin-top: 1.5em;
+    align-self: flex-start;
+    text-decoration: underline;
+}
+
+#ceo_div {
+    width: 100%;
+    display: flex;
+}
+
+.pp_div {
+    margin: 1em auto;
+    padding: 0.5em;
+    background-color: whitesmoke;
+    border-radius: 3em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+}
+
+.pp_div img {
+    border: 1px solid black;
+    margin: 0.5em;
+    height: 10em;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.pp_div h3, .pp_div p {
+    color: black;
+    margin: 0;
+    text-align: center;
+}
+
+#our_work {
+    margin: 0;
+    padding-left: 5em;
+    line-height: 1.5em;
+    list-style: disc;
+    align-self: flex-start;
+}
+
+#sources {
+    margin: 0;
+    margin-bottom: 1em ;
+    padding-left: 5em;
+    line-height: 1.5em;
+    list-style: circle;
+    align-self: flex-start;
+}
+
+#sources a {
+    color: cornflowerblue;
+    word-break: break-all;
+}
+

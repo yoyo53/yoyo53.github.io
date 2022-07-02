@@ -1,0 +1,26 @@
+#content {
+    flex: none;
+    width: fit-content;
+}
+
+#login_form {
+    text-align: center;
+    line-height: 2em;
+}
+
+#create_account {
+    margin: 0;
+}
+
+#create_account a {
+    color: #0074CC;
+}
+
+#login_form table {
+    text-align: left;
+}
+
+#login_form button {
+    margin: 0 1em;
+    line-height: 1.5em;
+}

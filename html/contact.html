@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Toboloc - Contacs Us</title>
+        <link rel="icon" type="image/x-icon" href="../images/logo.png">
+        <meta charset="utf-8">
+        <link rel= "stylesheet" href="../styles/main_style.css">
+        <link rel= "stylesheet" href="../styles/navigation_bar_style.css">
+        <link rel= "stylesheet" href="../styles/content_style.css">
+        <link rel= "stylesheet" href="../styles/contact_style.css">
+        <script src="../scripts/main_script.js"></script>
+        <script src="../scripts/contact_script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="title_line">
+                <h1 id="title" >Toboloc</h1>
+            </div>
+            <div id="nav_bar">
+                <ul id="menu">
+                    <li>
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <p>Products</p>
+                        <ul>
+                            <li>
+                                <a href="slides.html">Slides</a>
+                            </li>
+                            <li>
+                                <a href="water_slides.html">Water slides</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="buy.html">Buy</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section>
+            <div id="content">
+                <h2>Contact us</h2>
+                <form id="contact" onsubmit="send_message(); return false">
+                    <label for="mail">E-mail address:</label>
+                    <input type="email" name="mail" id="mail" placeholder="email@email.com" required>
+                    <br>
+                    <label for="category"></label>
+                    <select id="category" name="category" required>
+                        <option value="">--Reason of the request--</option>
+                        <option>Client services</option>
+                        <option>Join us</option>
+                        <option>Other</option>
+                    </select>
+                    <br>
+                    <textarea id="message" rows="10" cols="50" placeholder="Type your message here" required></textarea>
+                    <br>
+                    <button type="submit">Send</button>
+                    <button type="button" onclick="history.back()">Cancel</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <ul>
+                <li>
+                    <a href="contact.html">Contact us</a>
+                </li>
+                <li>
+                    <a href="https://goo.gl/maps/vMVJikAC5TB77T2r6" target="_blank">Find us</a>
+                </li>
+                <li>
+                    <a href="about.html">About us</a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

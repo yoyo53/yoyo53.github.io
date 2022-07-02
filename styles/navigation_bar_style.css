@@ -1,0 +1,54 @@
+#menu {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+#menu a, #menu p {
+    padding: 0 1vw;
+    line-height: 2em;
+    text-decoration: none;
+    color: white;
+}
+
+#menu p {
+    margin: 0;
+    cursor: default;
+
+}
+
+
+#menu li {
+    list-style: none;
+}
+
+#menu > li {
+    margin: 0 1vw;
+    border-radius: 1em;
+    text-align: center;
+    height: min-content;
+    background-color: gray;
+}
+
+#menu ul{
+    padding: 0;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background-color: rgb(177, 177, 177);
+    
+    position: relative;
+    z-index: 10;
+    max-height:0;
+    overflow: hidden;
+    -moz-transition: .8s all .3s;
+    -webkit-transition: .8s all .3s;
+    transition: .8s all .3s;
+}
+
+#menu li li:hover {
+    background-color: gray;
+}
+
+#menu li:hover ul {
+    max-height: 6em;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Toboloc - Buy</title>
+        <link rel="icon" type="image/x-icon" href="../images/logo.png">
+        <meta charset="utf-8">
+        <link rel= "stylesheet" href="../styles/main_style.css">
+        <link rel= "stylesheet" href="../styles/navigation_bar_style.css">
+        <link rel= "stylesheet" href="../styles/content_style.css">
+        <link rel= "stylesheet" href="../styles/buy_style.css">
+        <script src="../scripts/buy_script.js"></script>
+        <script src="../scripts/main_script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="title_line">
+                <h1 id="title" >Toboloc</h1>
+            </div>
+            <div id="nav_bar">
+                <ul id="menu">
+                    <li>
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <p>Products</p>
+                        <ul>
+                            <li>
+                                <a href="slides.html">Slides</a>
+                            </li>
+                            <li>
+                                <a href="water_slides.html">Water slides</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="buy.html">Buy</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section>
+            <div id="content">
+                <h2>Buy a slide</h2>
+                <div id="slides_buttons">
+                    <button class="img_buttons" onclick="add('Golden slide', 100000)">
+                        Golden slide
+                        <img src="../images/golden_slide.png" alt="">
+                    </button>
+                    <button class="img_buttons" onclick="add('El serpentino', 30000)">
+                        El serpentino
+                        <img src="../images/El_serpentino.jpg" alt="">
+                    </button>
+                    <button class="img_buttons" onclick="add('Japanese style', 50000)">
+                        Japanese style
+                        <img src="../images/japanese_style.jpg" alt="">
+                    </button>
+                    <button class="img_buttons" onclick="add('Low budget', 1000)">
+                        Low budget
+                        <img src="../images/low_budget.png" alt="">
+                    </button>
+                    <button class="img_buttons" onclick="add('Caribean slide', 10000)">
+                        Caribean slide
+                        <img src="../images/Caribean_slide.jpg" alt="">
+                    </button>
+                    <button class="img_buttons" onclick="add('Double jurassic slide', 40000)">
+                        Double jurassic slide
+                        <img src="../images/Double_jurassic_slide.jpg" alt="">
+                    </button>
+                    <button class="img_buttons" onclick="add('Rrrrrrrrr', 15000)">
+                        Rrrrrrrrr
+                        <img src="../images/Rrrrrrrrr.jpg" alt="">
+                    </button>
+                    <button class="img_buttons" onclick="add('The rock\'s slide', 20000)">
+                        The rock's slide
+                        <img src="../images/The_rock's_slide.png" alt="">
+                    </button>
+                </div>                
+                <div id="table_div">
+                    <table id="table">
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <tr>
+                            <th>Name</th>
+                            <th>Quantity</th>
+                            <th>Unity price (€)</th>
+                            <th>Total price (€)</th>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>0</td>
+                            <td></td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </div>
+                <button onclick="pay()" id="pay_button">Pay</button>
+            </div>
+            <form id="pay_form" onsubmit="pay_confirm(); return false">
+                <h2>Payement</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="card_number">Card number:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="card_number" id="card_number" pattern="[0-9]{4}(\s[0-9]{4}){3}" maxlength="19" placeholder="XXXX XXXX XXXX XXXX" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="expiration_date">Expiration date:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="expiration_date" id="expiration_date" pattern="(0[1-9]|1[012])/[0-9]{2}" maxlength="5" placeholder="MM/YY" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="security_code">Card security code:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="security_code"  id="security_code" pattern="[0-9]{3}" maxlength="3" placeholder="***" required>
+                        </td>
+                    </tr>
+                </table>
+                <button type="submit">Confirm</button>
+                <button type="button" onclick="exit_pay_window()">Cancel</button>
+            </form>
+            <div id="cover"></div>
+        </section>
+        <footer>
+            <ul>
+                <li>
+                    <a href="contact.html">Contact us</a>
+                </li>
+                <li>
+                    <a href="https://goo.gl/maps/vMVJikAC5TB77T2r6" target="_blank">Find us</a>
+                </li>
+                <li>
+                    <a href="about.html">About us</a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

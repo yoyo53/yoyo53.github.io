@@ -1,0 +1,10 @@
+section {
+    background-image: url("../images/background.png");
+    background-size: cover;
+}
+
+#slogan {
+    color: white;
+    font-weight: normal;
+    font-size: 3em;
+}
